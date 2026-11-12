@@ -1,0 +1,17 @@
+country,year,sector,emissions_metric_tons,renewables_pct,gdp_growth
+Germany,2020,Energy,680000,45.2, -3.8
+Germany,2021,Energy,665000,48.1, 2.6
+Germany,2022,Transport,540000,51.4, 1.8
+Germany,2023,Industry,490000,56.0, -0.3
+Sweden,2020,Energy,42000,62.8, -2.2
+Sweden,2021,Transport,39000,65.3, 4.1
+Sweden,2022,Industry,35000,68.7, 2.9
+Sweden,2023,Energy,31000,72.1, 1.1
+Japan,2020,Energy,1020000,21.5, -4.5
+Japan,2021,Transport,980000,23.2, 1.7
+Japan,2022,Industry,930000,25.8, 1.0
+Japan,2023,Energy,880000,28.4, 1.9
+Canada,2020,Energy,670000,66.2, -5.1
+Canada,2021,Transport,640000,67.9, 5.0
+Canada,2022,Industry,610000,69.5, 3.4
+Canada,2023,Energy,585000,71.2, 1.2

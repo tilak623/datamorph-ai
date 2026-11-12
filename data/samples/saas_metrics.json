@@ -1,0 +1,14 @@
+[
+  { "date": "2024-01-15", "service": "Auth Engine", "region": "US-East", "tier": "Enterprise", "active_users": 14200, "revenue_usd": 48200, "latency_ms": 42, "error_rate": 0.02 },
+  { "date": "2024-02-15", "service": "Auth Engine", "region": "US-East", "tier": "Enterprise", "active_users": 18500, "revenue_usd": 59100, "latency_ms": 39, "error_rate": 0.01 },
+  { "date": "2024-03-15", "service": "Query Pipeline", "region": "EU-Central", "tier": "Enterprise", "active_users": 29400, "revenue_usd": 94000, "latency_ms": 68, "error_rate": 0.05 },
+  { "date": "2024-04-15", "service": "Query Pipeline", "region": "EU-Central", "tier": "Growth", "active_users": 22100, "revenue_usd": 68500, "latency_ms": 61, "error_rate": 0.03 },
+  { "date": "2024-05-15", "service": "Vector Storage", "region": "AP-South", "tier": "Growth", "active_users": 38900, "revenue_usd": 124000, "latency_ms": 52, "error_rate": 0.02 },
+  { "date": "2024-06-15", "service": "Vector Storage", "region": "AP-South", "tier": "Enterprise", "active_users": 49200, "revenue_usd": 168000, "latency_ms": 48, "error_rate": 0.01 },
+  { "date": "2024-07-15", "service": "Inference Hub", "region": "US-West", "tier": "Enterprise", "active_users": 62100, "revenue_usd": 215000, "latency_ms": 75, "error_rate": 0.04 },
+  { "date": "2024-08-15", "service": "Inference Hub", "region": "US-West", "tier": "Growth", "active_users": 58400, "revenue_usd": 192000, "latency_ms": 71, "error_rate": 0.03 },
+  { "date": "2024-09-15", "service": "Realtime Sync", "region": "US-East", "tier": "Starter", "active_users": 19800, "revenue_usd": 38000, "latency_ms": 33, "error_rate": 0.01 },
+  { "date": "2024-10-15", "service": "Realtime Sync", "region": "EU-Central", "tier": "Growth", "active_users": 34500, "revenue_usd": 89000, "latency_ms": 37, "error_rate": 0.02 },
+  { "date": "2024-11-15", "service": "Analytics Hub", "region": "US-East", "tier": "Enterprise", "active_users": 74300, "revenue_usd": 284000, "latency_ms": 84, "error_rate": 0.06 },
+  { "date": "2024-12-15", "service": "Analytics Hub", "region": "EU-Central", "tier": "Enterprise", "active_users": 89100, "revenue_usd": 342000, "latency_ms": 82, "error_rate": 0.04 }
+]

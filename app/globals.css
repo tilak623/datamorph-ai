@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-serif: 'Playfair Display', 'Fraunces', Georgia, serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+body {
+  background-color: #080c14;
+  color: #f1f5f9;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Custom editorial styles */
+.editorial-title {
+  font-family: var(--font-serif);
+}
+
+.editorial-mono {
+  font-family: var(--font-mono);
+}
+
+.editorial-display {
+  font-family: 'Syne', sans-serif;
+}
+
+/* Glassmorphism */
+.glass-panel {
+  background: rgba(14, 20, 32, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-glow {
+  background: rgba(14, 20, 32, 0.85);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  box-shadow: 0 0 25px rgba(56, 189, 248, 0.08);
+}
+
+/* Aurora & Mesh glows */
+.mesh-glow {
+  background: radial-gradient(circle at 50% -20%, rgba(56, 189, 248, 0.15), transparent 70%);
+}
+
+.accent-glow {
+  background: radial-gradient(circle at 50% 50%, rgba(16, 185, 129, 0.12), transparent 60%);
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #080c14;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
