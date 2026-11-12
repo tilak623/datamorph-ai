@@ -46,7 +46,8 @@ async function runVerification() {
   const q1 = engine.answerQuestion('What is the highest revenue_usd?');
   console.log('    [DEBUG Q1 RESULT]:', q1.formattedResult);
   assert(q1.computedValue !== undefined, `Calculated highest value: ${q1.computedValue}`);
-  assert(q1.formattedResult.toLowerCase().includes('maximum') || q1.formattedResult.toLowerCase().includes('highest'), 'Accurately identified maximum record');
+  const isMaxDetected = q1.formattedResult.toLowerCase().includes('maximum') || q1.formattedResult.toLowerCase().includes('highest');
+  assert(Boolean(isMaxDetected), 'Accurately identified maximum record');
 
   const q2 = engine.answerQuestion('What is the average latency_ms?');
   assert(q2.operation === 'AVG', 'Recognized average intent');
