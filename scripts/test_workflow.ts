@@ -38,6 +38,8 @@ async function runVerification() {
   assert(saasAnalysis.heroMetric.giantNumber.length > 0, `Hero Metric synthesized: ${saasAnalysis.heroMetric.giantNumber}`);
   assert(saasAnalysis.scrollyChapters.length >= 4, `Generated ${saasAnalysis.scrollyChapters.length} Scrollytelling narrative chapters`);
   assert(saasAnalysis.correlations.length > 0, `Detected ${saasAnalysis.correlations.length} Pearson correlation pairs`);
+  assert(saasAnalysis.modelRecommendations.length > 0, `Generated ${saasAnalysis.modelRecommendations.length} ML model recommendations`);
+  assert(saasAnalysis.modelRecommendations.some((model) => model.type === 'linear_regression'), 'At least one linear regression model was recommended');
 
   // TEST 2: Grounded Dataset Query Engine
   console.log('\n▶ [2/6] Testing Grounded Query Engine (Zero-Hallucination)');

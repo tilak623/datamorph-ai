@@ -78,6 +78,19 @@ export interface DesignTheme {
   tone: 'editorial-dark' | 'journalism-slate' | 'cyber-neon' | 'warm-paper';
 }
 
+export type ModelType = 'linear_regression' | 'classification' | 'time_series';
+
+export interface ModelRecommendation {
+  id: string;
+  name: string;
+  type: ModelType;
+  targetColumn: string;
+  featureColumns: string[];
+  qualityScore: number;
+  summary: string;
+  notes: string[];
+}
+
 export interface DatasetAnalysis {
   rowCount: number;
   columnCount: number;
@@ -90,6 +103,7 @@ export interface DatasetAnalysis {
   scrollyChapters: ScrollyChapter[];
   recommendedVisualizations: VisualizationConfig[];
   designTheme: DesignTheme;
+  modelRecommendations: ModelRecommendation[];
 }
 
 export interface UserSession {

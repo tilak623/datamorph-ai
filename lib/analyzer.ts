@@ -10,6 +10,7 @@ import {
   VisualizationConfig,
 } from '../types/index';
 import { selectThemeForDataset } from './designThemes';
+import { generateModelRecommendations } from './mlModels';
 
 // Classify column data type based on sample values
 function classifyColumn(values: any[]): DataType {
@@ -388,7 +389,7 @@ export function analyzeDataset(rows: Record<string, any>[]): DatasetAnalysis {
 
   const designTheme = selectThemeForDataset(columnNames);
 
-  return {
+  const analysis: DatasetAnalysis = {
     rowCount,
     columnCount: columnNames.length,
     columns,
@@ -400,5 +401,9 @@ export function analyzeDataset(rows: Record<string, any>[]): DatasetAnalysis {
     scrollyChapters,
     recommendedVisualizations,
     designTheme,
+    modelRecommendations: [],
   };
+
+  analysis.modelRecommendations = generateModelRecommendations(rows, analysis);
+  return analysis;
 }
